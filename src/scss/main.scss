@@ -26,6 +26,19 @@ body {
   .content{
     flex-grow: 1;
     background: lightgreen;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  .album{
+    flex-basis: 300px;
+    ul {
+      list-style:none;
+      li img {
+        width: 200px;
+      }
+    }
+  }
   };
   .main-footer{
     height: 30px;

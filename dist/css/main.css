@@ -32,6 +32,21 @@ body {
 #app .content {
   flex-grow: 1;
   background: lightgreen;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#app .content .album {
+  flex-basis: 300px;
+}
+
+#app .content .album ul {
+  list-style: none;
+}
+
+#app .content .album ul li img {
+  width: 200px;
 }
 
 #app .main-footer {

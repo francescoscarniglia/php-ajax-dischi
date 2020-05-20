@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    GENERAL RULES
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    APP
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#app {
+  background: red;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 1070px;
+}
+
+#app .logo {
+  height: 30px;
+  background: yellow;
+}
+
+#app .content {
+  flex-grow: 1;
+  background: lightgreen;
+}
+
+#app .main-footer {
+  height: 30px;
+  background: green;
+}
+

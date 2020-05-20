@@ -10,22 +10,46 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+$bgPrimary :#191919;
+$colWhite :#fff;
+$colGray :gray;
+
+h1,
+h2 {
+  color: $colWhite;
+  font-weight: 400;
+};
+
+h3,
+h4 {
+  color : $colGray;
+  font-weight: 100;
+};
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     APP
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 #app {
-  background: red;
+  background: $bgPrimary;
   display: flex;
   flex-direction: column;
   margin: auto;
   width: 1070px;
-  .logo{
-    height: 30px;
-    background: yellow;
-  };
+  .main-header {
+    .logo{
+      height: 50px;
+      padding: 10px 20px;
+      display: flex;
+      background: #000;
+      img {
+        width: 30px;
+        height: 30px;
+        margin-left: 30px;
+      }
+    }
+  }
+  ;
   .content{
     flex-grow: 1;
-    background: lightgreen;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -34,6 +58,14 @@ body {
     flex-basis: 300px;
     ul {
       list-style:none;
+      background: #000;
+      margin: 5px;
+      width: 250px;
+      text-align: center;
+      padding: 10px;
+      li {
+        margin: 5px;
+      }
       li img {
         width: 200px;
       }
@@ -42,6 +74,6 @@ body {
   };
   .main-footer{
     height: 30px;
-    background: green;
+    background: transparent;
   }
 };

@@ -80,9 +80,9 @@
  </head>
  <body>
 <div id="app">
-  <header>
+  <header class="main-header">
     <div class="logo">
-      here logo
+      <img src="dist/img/spotify-logo.png" alt="logo">
     </div><!-- logo -->
   </header>
   <main class="content">
@@ -111,7 +111,7 @@
   </main>
 
   <footer class="main-footer">
-  here footer
+
   </footer> <!-- footer -->
 
 </div><!-- app -->

@@ -30,5 +30,10 @@
   </footer> <!-- footer -->
 </div><!-- app -->
 
+<!-- <script src='src/js/main.js'>
+</script> -->
+
+<script src='dist/js/main.js'>
+</script>
  </body>
  </html>

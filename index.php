@@ -1,73 +1,8 @@
 <?php
   $main_css = 'dist/css/main.css';
-    // ref singles
-    $singles = [
-        [
-          'cover' => 'https://images-na.ssl-images-amazon.com/images/I/71JuNbWD2bL._AC_SX679_PJautoripBadge,BottomRight,4,-40_OU11__.jpg',
-          'artist' => 'the queen',
-          'track' => 'under pressure',
-          'album' => 'Sheer Heart Attack',
-          'year' => '1974'
-        ],
-        [
-          'cover' => 'https://images-na.ssl-images-amazon.com/images/I/71JuNbWD2bL._AC_SX679_PJautoripBadge,BottomRight,4,-40_OU11__.jpg',
-          'artist' => 'the queen',
-          'track' => 'under pressure',
-          'album' => 'Sheer Heart Attack',
-          'year' => '1974'
-        ],
-        [
-          'cover' => 'https://images-na.ssl-images-amazon.com/images/I/71JuNbWD2bL._AC_SX679_PJautoripBadge,BottomRight,4,-40_OU11__.jpg',
-          'artist' => 'the queen',
-          'track' => 'under pressure',
-          'album' => 'Sheer Heart Attack',
-          'year' => '1974'
-        ],
-        [
-          'cover' => 'https://images-na.ssl-images-amazon.com/images/I/71JuNbWD2bL._AC_SX679_PJautoripBadge,BottomRight,4,-40_OU11__.jpg',
-          'artist' => 'the queen',
-          'track' => 'under pressure',
-          'album' => 'Sheer Heart Attack',
-          'year' => '1974'
-        ],
-        [
-          'cover' => 'https://images-na.ssl-images-amazon.com/images/I/71JuNbWD2bL._AC_SX679_PJautoripBadge,BottomRight,4,-40_OU11__.jpg',
-          'artist' => 'the queen',
-          'track' => 'under pressure',
-          'album' => 'Sheer Heart Attack',
-          'year' => '1974'
-        ],
-        [
-          'cover' => 'https://images-na.ssl-images-amazon.com/images/I/71JuNbWD2bL._AC_SX679_PJautoripBadge,BottomRight,4,-40_OU11__.jpg',
-          'artist' => 'the queen',
-          'track' => 'under pressure',
-          'album' => 'Sheer Heart Attack',
-          'year' => '1974'
-        ],
-        [
-          'cover' => 'https://images-na.ssl-images-amazon.com/images/I/71JuNbWD2bL._AC_SX679_PJautoripBadge,BottomRight,4,-40_OU11__.jpg',
-          'artist' => 'the queen',
-          'track' => 'under pressure',
-          'album' => 'Sheer Heart Attack',
-          'year' => '1974'
-        ],
-        [
-          'cover' => 'https://images-na.ssl-images-amazon.com/images/I/71JuNbWD2bL._AC_SX679_PJautoripBadge,BottomRight,4,-40_OU11__.jpg',
-          'artist' => 'the queen',
-          'track' => 'under pressure',
-          'album' => 'Sheer Heart Attack',
-          'year' => '1974'
-        ],[
-          'cover' => 'https://images-na.ssl-images-amazon.com/images/I/71JuNbWD2bL._AC_SX679_PJautoripBadge,BottomRight,4,-40_OU11__.jpg',
-          'artist' => 'the queen',
-          'track' => 'under pressure',
-          'album' => 'Sheer Heart Attack',
-          'year' => '1974'
-        ],
-
-    ];
+    include 'partials/templates/data.php';
  ?>
-
+ 
  <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -80,43 +15,20 @@
  </head>
  <body>
 <div id="app">
-  <header class="main-header">
-    <div class="logo">
-      <img src="dist/img/spotify-logo.png" alt="logo">
-    </div><!-- logo -->
-  </header>
+  <?php
+    include 'partials/templates/header.php';
+   ?>
   <main class="content">
 
-    <?php foreach ($singles as $single) {?>
-    <div class="album">
-      <ul>
-        <li>
-          <img src=" <?php echo $single["cover"]; ?> " alt="poster">
-        </li>
-        <li>
-          <h2> <?php echo $single["artist"]; ?></h2>
-        </li>
-        <li>
-          <h3> <?php echo $single["track"] ?> </h3>
-        </li>
-        <li>
-          <h4> <?php echo $single["album"] ?> </h4>
-        </li>
-        <li>
-          <h4> <?php echo $single["year"] ?> </h4>
-        </li>
-      </ul>
-    </div>
-    <?php } ?>
+    <?php
+      include 'partials/templates/foreach.php';
+     ?>
   </main>
 
   <footer class="main-footer">
 
   </footer> <!-- footer -->
-
 </div><!-- app -->
-
-
 
  </body>
  </html>

@@ -1,6 +1,10 @@
 <?php
-  $main_css = 'dist/css/main.css';
-    include __DIR__ . '/partials/templates/data.php';
+    $header = '/partials/templates/header.php';
+    $foreach = '/partials/templates/foreach.php';
+    $data = '/partials/templates/data.php';
+    $main_css = 'dist/css/main.css';
+    $main_js = 'dist/js/main.js';
+    include __DIR__ . $data;
  ?>
 
  <!DOCTYPE html>
@@ -16,12 +20,12 @@
  <body>
 <div id="app">
   <?php
-    include __DIR__ . '/partials/templates/header.php';
+    include __DIR__ . $header;
    ?>
   <main class="content">
 
     <?php
-      include __DIR__ . '/partials/templates/foreach.php';
+      include __DIR__ . $foreach;
      ?>
   </main>
 
@@ -30,10 +34,7 @@
   </footer> <!-- footer -->
 </div><!-- app -->
 
-<!-- <script src='src/js/main.js'>
-</script> -->
-
-<script src='dist/js/main.js'>
+<script src='<?php echo $main_js; ?>'>
 </script>
  </body>
  </html>

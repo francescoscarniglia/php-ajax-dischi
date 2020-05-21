@@ -50,21 +50,21 @@ h4 {
   ;
   .content{
     flex-grow: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 
   .album{
     flex-basis: 300px;
-    ul {
+    .single-list {
+      display:flex;
+      flex-wrap: wrap;
       list-style:none;
-      background: #000;
-      margin: 5px;
-      width: 250px;
-      text-align: center;
       padding: 10px;
+      justify-content: center;
       li {
-        margin: 5px;
+        background: #000;
+        width: 250px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
       }
       li img {
         width: 200px;

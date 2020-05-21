@@ -51,29 +51,29 @@ h4 {
 
 #app .content {
   flex-grow: 1;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 #app .content .album {
   flex-basis: 300px;
 }
 
-#app .content .album ul {
+#app .content .album .single-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  background: #000;
-  margin: 5px;
-  width: 250px;
-  text-align: center;
   padding: 10px;
+  justify-content: center;
 }
 
-#app .content .album ul li {
-  margin: 5px;
+#app .content .album .single-list li {
+  background: #000;
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
 }
 
-#app .content .album ul li img {
+#app .content .album .single-list li img {
   width: 200px;
 }
 

@@ -25,7 +25,6 @@
   <main class="content">
     <div class="album">
       <ul class="single-list">
-
       </ul>
     </div>
 
@@ -39,11 +38,11 @@
 <!-- Handlebars Templates -->
     <script id="template" type="text/x-handlebars-template">
         <li>
-            <img src="{{ cover }}" alt="{{ title }}">
-            <span>{{ track }}</span>
-            <span>{{ artist }}</span>
-            <span>{{ album }}</span>
-            <span>{{ year }}</span>
+            <img src="{{ cover }}" alt="{{ track }}">
+            <span><h2>{{ track }}</h2></span>
+            <span><h3>{{ artist }}</h4></span>
+            <span><h4>{{ album }}<h4></span>
+            <span><h4>{{ year }}<h4></span>
         </li>
     </script>
 

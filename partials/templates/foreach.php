@@ -1,6 +1,6 @@
 <?php foreach ($singles as $single) {?>
   <div class="album">
-    <ul>
+    <ul class="single-list">
       <li>
         <img src=" <?php echo $single["cover"]; ?> " alt="<?php echo $single["track"] ?>">
         <span><h2> <?php echo $single["artist"]; ?></h2></span>

@@ -10985,7 +10985,7 @@ __webpack_require__.r(__webpack_exports__);
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   //console.log('Jq is ok');
   // ref handLebars
-  var singleList = '.single-list'; // template di handLebars
+  var singleList = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.single-list'); // template di handLebars
 
   var source = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#template').html();
   var template = Handlebars.compile(source);
@@ -10995,6 +10995,20 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     dataType: 'json',
     success: function success(data) {
       console.log(data);
+
+      for (var i = 0; i < data.length; i++) {
+        var context = {
+          cover: data[i].cover,
+          artist: data[i].artist,
+          track: data[i].track,
+          album: data[i].album,
+          year: data[i].year
+        };
+        var output = template(context);
+        singleList.append(output);
+      }
+
+      ;
     },
     error: function error() {
       console.log('Have a problem');

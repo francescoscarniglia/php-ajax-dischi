@@ -20,13 +20,15 @@
  <body>
 <div id="app">
   <?php
-    include_once __DIR__ . $header;
+    include __DIR__ . $header;
    ?>
   <main class="content">
+    <div class="album">
+      <ul class="single-list">
 
-    <?php
-      include __DIR__ . $foreach;
-     ?>
+      </ul>
+    </div>
+
   </main>
 
   <footer class="main-footer">
@@ -34,6 +36,19 @@
   </footer> <!-- footer -->
 </div><!-- app -->
 
+<!-- Handlebars Templates -->
+    <script id="template" type="text/x-handlebars-template">
+        <li>
+            <img src="{{ cover }}" alt="{{ title }}">
+            <span>{{ track }}</span>
+            <span>{{ artist }}</span>
+            <span>{{ album }}</span>
+            <span>{{ year }}</span>
+        </li>
+    </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
 <script src='<?php echo $main_js; ?>'>
 </script>
  </body>

@@ -10983,8 +10983,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
-  console.log('ciao');
-}); //ready
+  //console.log('Jq is ok');
+  // ref handLebars
+  var singleList = '.single-list'; // template di handLebars
+
+  var source = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#template').html();
+  var template = Handlebars.compile(source);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
+    url: 'partials/templates/data-json.php',
+    method: 'GET',
+    dataType: 'json',
+    success: function success(data) {
+      console.log(data);
+    },
+    error: function error() {
+      console.log('Have a problem');
+    }
+  });
+});
 
 /***/ }),
 

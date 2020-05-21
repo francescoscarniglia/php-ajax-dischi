@@ -1,8 +1,8 @@
 <?php
   $main_css = 'dist/css/main.css';
-    include 'partials/templates/data.php';
+    include __DIR__ . '/partials/templates/data.php';
  ?>
- 
+
  <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -16,12 +16,12 @@
  <body>
 <div id="app">
   <?php
-    include 'partials/templates/header.php';
+    include __DIR__ . '/partials/templates/header.php';
    ?>
   <main class="content">
 
     <?php
-      include 'partials/templates/foreach.php';
+      include __DIR__ . '/partials/templates/foreach.php';
      ?>
   </main>
 
